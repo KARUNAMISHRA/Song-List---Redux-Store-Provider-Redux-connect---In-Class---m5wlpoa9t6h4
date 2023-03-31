@@ -1,4 +1,4 @@
-import React from "react";
+ import React from "react";
 import { connect } from "react-redux";
 function SongList(props) {
     const { songs } = props;
@@ -16,3 +16,4 @@ const mapStateToProps = (state) => {
 };
 
 // Add code here
+export default connect(mapStateToProps)(SongList);
